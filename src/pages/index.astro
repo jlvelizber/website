@@ -1,0 +1,925 @@
+---
+const services = [
+  {
+    title: 'Desarrollo web empresarial',
+    text: 'Aplicaciones, portales y plataformas a medida con arquitectura escalable, mantenimiento claro y foco en resultados de negocio.',
+  },
+  {
+    title: 'Laravel, PHP y JavaScript',
+    text: 'Construcción y optimización de sistemas backend, integraciones, paneles administrativos, APIs y experiencias frontend modernas.',
+  },
+  {
+    title: 'WordPress, WooCommerce y Moodle',
+    text: 'Sitios corporativos, tiendas online, intranets educativas y soluciones personalizadas sobre plataformas consolidadas.',
+  },
+  {
+    title: 'SEO técnico y rendimiento',
+    text: 'Auditorías, optimización Core Web Vitals, indexabilidad, estructura semántica, velocidad de carga y mejoras de conversión.',
+  },
+  {
+    title: 'Administración VPS',
+    text: 'Configuración, hardening, migraciones, monitoreo, backups y despliegues para proyectos que necesitan estabilidad real.',
+  },
+  {
+    title: 'Consultoría tecnológica',
+    text: 'Diagnóstico, planificación y acompañamiento para transformar requerimientos complejos en soluciones web sostenibles.',
+  },
+];
+
+const projects = [
+  {
+    category: 'E-commerce',
+    title: 'Optimización WooCommerce para crecimiento',
+    description:
+      'Rediseño de experiencia de compra, mejoras de rendimiento y automatización de procesos para aumentar conversiones.',
+    result: '+38% mejora estimada en velocidad',
+  },
+  {
+    category: 'SaaS / Laravel',
+    title: 'Sistema web administrativo a medida',
+    description:
+      'Desarrollo de módulos de gestión, autenticación, reportes y flujos operativos para reducir trabajo manual.',
+    result: 'Procesos más rápidos y medibles',
+  },
+  {
+    category: 'Educación digital',
+    title: 'Plataforma Moodle corporativa',
+    description:
+      'Implementación de aula virtual con roles, reportes, estructura de cursos y configuración segura para equipos internos.',
+    result: 'Gestión centralizada de capacitación',
+  },
+];
+
+const technologies = [
+  'Laravel',
+  'PHP',
+  'JavaScript',
+  'WordPress',
+  'WooCommerce',
+  'Moodle',
+  'MySQL',
+  'SEO técnico',
+  'VPS Linux',
+  'APIs REST',
+  'Astro',
+  'Performance web',
+];
+
+const posts = [
+  'Cómo saber si tu sitio web está perdiendo clientes por problemas técnicos',
+  'Laravel vs WordPress: cuándo conviene cada solución para tu negocio',
+  'Checklist SEO técnico antes de lanzar una web corporativa',
+];
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desarrollador Full Stack y Consultor Tecnológico especializado en Laravel, PHP, JavaScript, WordPress, WooCommerce, Moodle, SEO técnico y servidores VPS."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador full stack, consultor tecnológico, Laravel, PHP, JavaScript, WordPress, WooCommerce, Moodle, SEO técnico, VPS"
+    />
+    <meta name="author" content="Desarrollador Full Stack y Consultor Tecnológico" />
+    <meta property="og:title" content="Desarrollador Full Stack y Consultor Tecnológico" />
+    <meta
+      property="og:description"
+      content="Soluciones web empresariales, consultoría tecnológica y optimización digital enfocada en resultados."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tudominio.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Desarrollador Full Stack y Consultor Tecnológico</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">FS</span>
+        <span>Full Stack Consultant</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#blog">Blog</a>
+        <a class="nav-cta" href="#contacto">Cotizar proyecto</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow">Desarrollo Full Stack | Consultoría Tecnológica | SEO Técnico</p>
+          <h1>Soluciones web empresariales que convierten objetivos en resultados medibles.</h1>
+          <p class="hero-copy">
+            Desarrollo plataformas, sitios corporativos, tiendas online y sistemas a medida con una visión integral:
+            tecnología sólida, rendimiento, escalabilidad y estrategia digital.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contacto">Solicitar cotización</a>
+            <a class="button secondary" href="#portafolio">Ver proyectos</a>
+          </div>
+          <div class="trust-bar" aria-label="Áreas de especialidad">
+            <span>Laravel</span>
+            <span>WordPress</span>
+            <span>WooCommerce</span>
+            <span>Moodle</span>
+            <span>VPS</span>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumen profesional">
+          <div class="status-pill">Disponible para nuevos proyectos</div>
+          <h2>Consultoría y desarrollo con enfoque ejecutivo.</h2>
+          <p>
+            Ideal para empresas que necesitan mejorar su presencia digital, automatizar procesos o estabilizar
+            infraestructura web crítica.
+          </p>
+          <div class="metric-grid">
+            <div>
+              <strong>360°</strong>
+              <span>visión técnica y negocio</span>
+            </div>
+            <div>
+              <strong>SEO</strong>
+              <span>base técnica optimizada</span>
+            </div>
+            <div>
+              <strong>VPS</strong>
+              <span>control de infraestructura</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section logos" aria-label="Propuesta de valor">
+        <span>Arquitectura limpia</span>
+        <span>Performance</span>
+        <span>Seguridad</span>
+        <span>Automatización</span>
+        <span>Conversión</span>
+      </section>
+
+      <section id="sobre-mi" class="section split">
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Un perfil técnico con mentalidad consultiva.</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            Soy Desarrollador Full Stack y Consultor Tecnológico especializado en crear soluciones web para empresas
+            que necesitan algo más que una página bonita: necesitan estabilidad, velocidad, posicionamiento y un
+            sistema que acompañe sus objetivos comerciales.
+          </p>
+          <p>
+            Trabajo con tecnologías como Laravel, PHP, JavaScript, WordPress, WooCommerce y Moodle, integrando
+            desarrollo, SEO técnico y administración de servidores VPS para entregar proyectos sólidos de extremo a
+            extremo.
+          </p>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Soluciones diseñadas para empresas que quieren crecer con tecnología confiable.</h2>
+          <p>
+            Desde la estrategia inicial hasta el despliegue, cada servicio está pensado para reducir fricción,
+            mejorar resultados y facilitar la toma de decisiones.
+          </p>
+        </div>
+        <div class="card-grid">
+          {services.map((service) => (
+            <article class="service-card">
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="portafolio" class="section dark-section">
+        <div class="section-heading">
+          <p class="eyebrow">Portafolio</p>
+          <h2>Proyectos y casos de éxito orientados a impacto.</h2>
+          <p>
+            Presenta aquí tus mejores trabajos con métricas, contexto del problema y resultados obtenidos para generar
+            confianza inmediata.
+          </p>
+        </div>
+        <div class="project-grid">
+          {projects.map((project) => (
+            <article class="project-card">
+              <span>{project.category}</span>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <strong>{project.result}</strong>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="tecnologias" class="section split">
+        <div>
+          <p class="eyebrow">Tecnologías</p>
+          <h2>Stack técnico preparado para proyectos web reales.</h2>
+        </div>
+        <div>
+          <p class="section-copy">
+            Combino herramientas consolidadas con buenas prácticas de rendimiento, seguridad y mantenimiento para que
+            cada proyecto sea fácil de escalar y administrar.
+          </p>
+          <div class="tech-list">
+            {technologies.map((tech) => <span>{tech}</span>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Blog</p>
+          <h2>Contenido para atraer clientes desde búsquedas de alto valor.</h2>
+          <p>
+            Una estrategia editorial enfocada en problemas reales ayuda a demostrar experiencia, posicionar servicios y
+            generar oportunidades orgánicas.
+          </p>
+        </div>
+        <div class="blog-grid">
+          {posts.map((post) => (
+            <article class="blog-card">
+              <p>Artículo recomendado</p>
+              <h3>{post}</h3>
+              <a href="#contacto">Consultar sobre este tema</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section cta-panel">
+        <div>
+          <p class="eyebrow">Trabajemos juntos</p>
+          <h2>¿Tu empresa necesita una web más rápida, segura y preparada para vender?</h2>
+        </div>
+        <a class="button primary" href="#contacto">Agendar diagnóstico</a>
+      </section>
+
+      <section id="contacto" class="section contact">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Solicita una cotización clara para tu próximo proyecto.</h2>
+          <p>
+            Cuéntame qué necesitas construir, mejorar o resolver. Responderé con una propuesta orientada a alcance,
+            prioridades técnicas y próximos pasos.
+          </p>
+          <ul class="contact-points">
+            <li>Diagnóstico inicial del estado técnico del proyecto.</li>
+            <li>Recomendaciones de solución y fases de implementación.</li>
+            <li>Estimación alineada con objetivos, urgencia y presupuesto.</li>
+          </ul>
+        </div>
+        <form class="contact-form" name="contacto" method="post">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="tu@email.com" required />
+          </label>
+          <label>
+            Tipo de proyecto
+            <select name="tipo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Sitio corporativo</option>
+              <option>Laravel / sistema a medida</option>
+              <option>WordPress / WooCommerce</option>
+              <option>Moodle</option>
+              <option>SEO técnico / rendimiento</option>
+              <option>Servidor VPS</option>
+            </select>
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Describe brevemente tu necesidad" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Enviar solicitud</button>
+          <p class="form-note">Conecta este formulario a tu CRM, email transaccional o endpoint preferido.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Full Stack Consultant. Desarrollo web, consultoría tecnológica y SEO técnico.</p>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --surface: #ffffff;
+    --ink: #0f172a;
+    --muted: #5b6475;
+    --line: #dce3ee;
+    --primary: #2563eb;
+    --primary-dark: #1744a7;
+    --accent: #14b8a6;
+    --dark: #08111f;
+    --dark-soft: #111c2e;
+    --radius: 24px;
+    --shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 34rem),
+      linear-gradient(180deg, #ffffff 0%, var(--bg) 45%, #ffffff 100%);
+    color: var(--ink);
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: min(1180px, calc(100% - 32px));
+    margin: 16px auto 0;
+    padding: 14px 16px;
+    border: 1px solid rgba(220, 227, 238, 0.88);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 16px 60px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(18px);
+  }
+
+  .brand,
+  .nav,
+  .hero-actions,
+  .trust-bar,
+  .logos,
+  .cta-panel,
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand {
+    gap: 0.7rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-mark {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--ink);
+    color: #ffffff;
+    font-size: 0.85rem;
+  }
+
+  .nav {
+    gap: 1.2rem;
+    color: var(--muted);
+    font-size: 0.94rem;
+    font-weight: 650;
+  }
+
+  .nav a:hover {
+    color: var(--primary);
+  }
+
+  .nav-cta {
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: var(--ink);
+    color: #ffffff !important;
+  }
+
+  .section {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 92px 0;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 2rem;
+    align-items: center;
+    min-height: 760px;
+  }
+
+  .eyebrow {
+    margin: 0 0 1rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    max-width: 820px;
+    margin-bottom: 1.4rem;
+    font-size: clamp(2.9rem, 7vw, 5.9rem);
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 3.45rem);
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+  }
+
+  h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.18rem;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-copy,
+  .section-heading p,
+  .section-copy,
+  .rich-text,
+  .contact p {
+    color: var(--muted);
+    font-size: 1.08rem;
+  }
+
+  .hero-copy {
+    max-width: 700px;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.9rem 1.25rem;
+    border: 0;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      background 180ms ease;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button.primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #ffffff;
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.28);
+  }
+
+  .button.secondary {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .trust-bar {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .trust-bar span,
+  .tech-list span,
+  .logos span {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 750;
+  }
+
+  .trust-bar span {
+    padding: 0.52rem 0.85rem;
+  }
+
+  .hero-card {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(145deg, rgba(20, 184, 166, 0.2), transparent 36%),
+      linear-gradient(160deg, var(--dark), var(--dark-soft));
+    color: #ffffff;
+    box-shadow: var(--shadow);
+  }
+
+  .hero-card::after {
+    position: absolute;
+    right: -90px;
+    bottom: -120px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.42);
+    content: '';
+    filter: blur(8px);
+  }
+
+  .hero-card h2 {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(1.7rem, 3vw, 2.55rem);
+  }
+
+  .hero-card p,
+  .metric-grid span {
+    position: relative;
+    z-index: 1;
+    color: #b9c3d6;
+  }
+
+  .status-pill {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    margin-bottom: 4rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #dbeafe;
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+
+  .metric-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .metric-grid div {
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .metric-grid strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1.45rem;
+  }
+
+  .logos {
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0 0 54px;
+  }
+
+  .logos span {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: start;
+  }
+
+  .rich-text p:last-child,
+  .section-heading p:last-child,
+  .section-copy:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 2rem;
+  }
+
+  .card-grid,
+  .project-grid,
+  .blog-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-card,
+  .blog-card,
+  .contact-form {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
+  }
+
+  .service-card,
+  .blog-card {
+    padding: 1.5rem;
+  }
+
+  .service-card p,
+  .blog-card p,
+  .project-card p,
+  .contact-points {
+    color: var(--muted);
+  }
+
+  .dark-section {
+    width: min(1220px, calc(100% - 24px));
+    padding: 80px clamp(16px, 4vw, 40px);
+    border-radius: 36px;
+    background:
+      radial-gradient(circle at top right, rgba(20, 184, 166, 0.22), transparent 30rem),
+      var(--dark);
+    color: #ffffff;
+  }
+
+  .dark-section .section-heading p,
+  .project-card p {
+    color: #b9c3d6;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-card {
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .project-card span {
+    display: inline-flex;
+    margin-bottom: 1.8rem;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .project-card strong {
+    color: #ffffff;
+  }
+
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+  }
+
+  .tech-list span {
+    padding: 0.72rem 1rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-card p {
+    margin-bottom: 1.4rem;
+    font-size: 0.83rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .blog-card a {
+    color: var(--primary);
+    font-weight: 800;
+  }
+
+  .cta-panel {
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
+    box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+  }
+
+  .cta-panel h2 {
+    max-width: 760px;
+    margin-bottom: 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .contact-points {
+    padding-left: 1.2rem;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1rem;
+    padding: 1.4rem;
+  }
+
+  label {
+    display: grid;
+    gap: 0.45rem;
+    color: var(--ink);
+    font-weight: 800;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #ffffff;
+    color: var(--ink);
+    font: inherit;
+    padding: 0.95rem 1rem;
+    outline: none;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .form-note {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  .footer {
+    justify-content: space-between;
+    gap: 1rem;
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+    color: var(--muted);
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .footer a {
+    font-weight: 800;
+  }
+
+  @media (max-width: 980px) {
+    .site-header {
+      align-items: flex-start;
+      border-radius: 28px;
+      flex-direction: column;
+    }
+
+    .nav {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 0.15rem;
+    }
+
+    .hero,
+    .split,
+    .contact {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      min-height: auto;
+      padding-top: 72px;
+    }
+
+    .card-grid,
+    .project-grid,
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos {
+      flex-wrap: wrap;
+    }
+
+    .logos span {
+      min-width: calc(50% - 0.8rem);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .section {
+      width: min(100% - 24px, 1180px);
+      padding: 64px 0;
+    }
+
+    .site-header {
+      width: min(100% - 24px, 1180px);
+      margin-top: 12px;
+    }
+
+    .brand span:last-child {
+      display: none;
+    }
+
+    .nav {
+      gap: 0.9rem;
+      font-size: 0.88rem;
+    }
+
+    h1 {
+      font-size: clamp(2.55rem, 16vw, 4rem);
+    }
+
+    .hero-card,
+    .cta-panel,
+    .dark-section {
+      border-radius: 26px;
+    }
+
+    .card-grid,
+    .project-grid,
+    .blog-grid,
+    .metric-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-panel,
+    .footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .logos span {
+      min-width: 100%;
+    }
+  }
+</style>

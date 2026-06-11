@@ -1,7 +1,6 @@
-{
-	email {$LETSENCRYPT_EMAIL}
-}
+# Referencia para tu contenedor Caddy existente.
+# No lo monta docker-compose; copia este bloque a tu Caddyfile real.
 
-{$DOMAIN}, www.{$DOMAIN} {
-	reverse_proxy site:80
+jorgeveliz.dev, www.jorgeveliz.dev {
+	reverse_proxy marca-personal-site:80
 }

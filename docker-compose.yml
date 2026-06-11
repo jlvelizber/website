@@ -5,31 +5,12 @@ services:
       args:
         PUBLIC_SITE_URL: ${PUBLIC_SITE_URL:-https://jorgeveliz.dev}
     image: marca-personal-fullstack:prod
+    container_name: marca-personal-site
     restart: unless-stopped
     expose:
       - "80"
     networks:
-      - web
-
-  caddy:
-    image: caddy:2-alpine
-    container_name: caddy
-    restart: unless-stopped
-    depends_on:
-      - site
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    environment:
-      DOMAIN: ${DOMAIN:-jorgeveliz.dev}
-      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL:-admin@jorgeveliz.dev}
-    volumes:
-      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-    networks:
-      - web
+      - proxy
 
   dozzle:
     image: amir20/dozzle:latest
@@ -42,8 +23,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
 networks:
-  web:
-
-volumes:
-  caddy_data:
-  caddy_config:
+  proxy:
+    name: ${CADDY_NETWORK:-proxy}
+    external: true

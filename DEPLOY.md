@@ -7,10 +7,12 @@ Crear un archivo `.env` en el servidor a partir de `.env.example`:
 ```env
 PUBLIC_SITE_URL=https://jorgeveliz.dev
 DOMAIN=jorgeveliz.dev
-LETSENCRYPT_EMAIL=admin@jorgeveliz.dev
+CADDY_NETWORK=proxy
 ```
 
 `PUBLIC_SITE_URL` es la URL que Astro usa para generar sitemap, canonicales y metadatos dependientes del sitio.
+
+`CADDY_NETWORK` es la red Docker externa donde ya corre tu contenedor Caddy. Por defecto: `proxy`.
 
 ## Levantar producción
 
@@ -18,43 +20,48 @@ LETSENCRYPT_EMAIL=admin@jorgeveliz.dev
 docker compose up -d --build
 ```
 
-Si migras desde `nginx-proxy`, detén y elimina los contenedores antiguos antes de levantar Caddy:
+El servicio `site` se une a la red externa de Caddy. Caddy y este compose deben compartir la misma red Docker.
+
+Para ver en qué red está tu Caddy:
 
 ```bash
-docker compose down
-docker rm -f nginx-proxy nginx-proxy-acme 2>/dev/null || true
-docker compose up -d --build
+docker inspect caddy --format '{{range $k, $v := .NetworkSettings.Networks}}{{$k}} {{end}}'
+```
+
+Si la red se llama distinto, define `CADDY_NETWORK` en `.env` o créala y conecta Caddy:
+
+```bash
+docker network create proxy
+docker network connect proxy caddy
+```
+
+## Caddy existente
+
+Este proyecto no levanta Caddy. En tu Caddyfile, apunta directamente al contenedor del sitio por HTTP interno:
+
+```caddyfile
+jorgeveliz.dev, www.jorgeveliz.dev {
+	reverse_proxy marca-personal-site:80
+}
+```
+
+Referencia completa en `deploy/caddy/Caddyfile`.
+
+Importante para evitar `ERR_TOO_MANY_REDIRECTS`:
+
+- Caddy termina TLS y reenvía HTTP a `marca-personal-site:80`.
+- No reenvíes a `nginx-proxy`, al puerto `443` del host ni a otro proxy que redirija otra vez a HTTPS.
+- No añadas `redir https://...` dentro del bloque HTTPS; Caddy ya redirige HTTP → HTTPS solo.
+
+Recarga Caddy tras cambiar el Caddyfile:
+
+```bash
+docker exec caddy caddy reload --config /etc/caddy/Caddyfile
 ```
 
 ## Puertos
 
-El servicio `site` solo expone el puerto `80` dentro de la red Docker. El HTTPS público lo maneja `caddy`, que publica estos puertos del servidor:
-
-```yaml
-ports:
-  - "80:80"
-  - "443:443"
-```
-
-En el servidor, asegúrate de que el firewall permita ambos puertos:
-
-```bash
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-```
-
-El sitio queda disponible en:
-
-- `https://jorgeveliz.dev`
-- `https://www.jorgeveliz.dev`
-
-Los certificados se generan automáticamente con Caddy y Let's Encrypt.
-
-## Proxy reverso
-
-Caddy termina TLS y reenvía tráfico HTTP interno directamente a `site:80`. No uses `nginx-proxy` en paralelo: si Caddy reenvía a un proxy que también redirige a HTTPS, el navegador entra en un bucle (`ERR_TOO_MANY_REDIRECTS`).
-
-La configuración vive en `deploy/caddy/Caddyfile`.
+Este compose no publica `80` ni `443`. Esos puertos los gestiona tu contenedor Caddy.
 
 ## Ver logs
 

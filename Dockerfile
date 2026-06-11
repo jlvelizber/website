@@ -18,6 +18,8 @@ FROM nginx:1.27-alpine AS runtime
 COPY deploy/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# HTTPS termina en el servicio caddy del docker-compose.
+# Este contenedor solo sirve el sitio estático por HTTP interno.
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]

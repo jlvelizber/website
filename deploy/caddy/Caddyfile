@@ -1,0 +1,7 @@
+{
+	email {$LETSENCRYPT_EMAIL}
+}
+
+{$DOMAIN}, www.{$DOMAIN} {
+	reverse_proxy site:80
+}

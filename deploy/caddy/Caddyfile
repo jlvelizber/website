@@ -1,6 +1,6 @@
-# Referencia para tu contenedor Caddy existente.
-# No lo monta docker-compose; copia este bloque a tu Caddyfile real.
+# Referencia para tu Caddy existente (fuera de este compose).
+# Copia este bloque a tu Caddyfile real y ajusta el puerto si cambias SITE_PORT.
 
 jorgeveliz.dev, www.jorgeveliz.dev {
-	reverse_proxy marca-personal-site:80
+	reverse_proxy localhost:8080
 }

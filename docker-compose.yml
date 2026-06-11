@@ -5,12 +5,9 @@ services:
       args:
         PUBLIC_SITE_URL: ${PUBLIC_SITE_URL:-https://jorgeveliz.dev}
     image: marca-personal-fullstack:prod
-    container_name: marca-personal-site
     restart: unless-stopped
-    expose:
-      - "80"
-    networks:
-      - proxy
+    ports:
+      - "${SITE_PORT:-8080}:80"
 
   dozzle:
     image: amir20/dozzle:latest
@@ -21,8 +18,3 @@ services:
       - "127.0.0.1:9999:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-
-networks:
-  proxy:
-    name: ${CADDY_NETWORK:-proxy}
-    external: true

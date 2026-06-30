@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Placeholder portafolio sistema">
+  <rect fill="#1a2740" width="800" height="500"/>
+  <rect x="32" y="32" width="736" height="436" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="12 8" rx="16"/>
+  <text x="400" y="240" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="22" font-weight="700">proyecto-sistema.jpg</text>
+  <text x="400" y="275" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="15">Captura del proyecto · 800 × 500 px</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder sobre mi">
+  <rect fill="#e8edf4" width="800" height="1000"/>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="16 10" rx="24"/>
+  <text x="400" y="480" text-anchor="middle" fill="#5b6475" font-family="system-ui,sans-serif" font-size="24" font-weight="700">about.jpg</text>
+  <text x="400" y="520" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="16">Retrato o foto de trabajo</text>
+  <text x="400" y="560" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14">800 x 1000 px</text>
+</svg>

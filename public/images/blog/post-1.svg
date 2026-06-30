@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="Placeholder blog 1">
+  <rect fill="#eef2f7" width="600" height="340"/>
+  <rect x="24" y="24" width="552" height="292" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="10 6" rx="12"/>
+  <text x="300" y="178" text-anchor="middle" fill="#5b6475" font-family="system-ui,sans-serif" font-size="16" font-weight="700">post-1.jpg</text>
+</svg>

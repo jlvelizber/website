@@ -1,100 +1,62 @@
 ---
+// Reemplaza cada .svg por tu imagen (.jpg / .webp) con el mismo nombre de archivo.
 const services = [
   {
     title: 'Digitalización de procesos',
-    text: 'Identifico tareas repetitivas, cuellos de botella y flujos manuales para convertirlos en sistemas que ahorran tiempo y reducen errores en el día a día de tu empresa.',
+    text: 'Menos tareas manuales, más control sobre la operación diaria.',
   },
   {
-    title: 'Sistemas empresariales a medida',
-    text: 'Desarrollo plataformas internas, paneles de gestión y herramientas adaptadas a cómo opera tu negocio, con información centralizada y accesible para tu equipo.',
+    title: 'Sistemas empresariales',
+    text: 'Plataformas internas adaptadas a cómo trabaja tu equipo.',
   },
   {
-    title: 'Presencia digital y sitios web',
-    text: 'Sitios corporativos, portales informativos y plataformas que comunican con claridad lo que hace tu empresa y facilitan que clientes y prospectos den el siguiente paso.',
+    title: 'Presencia digital',
+    text: 'Sitios corporativos que comunican con claridad y generan confianza.',
   },
   {
-    title: 'WordPress y comercio electrónico',
-    text: 'Tiendas online y sitios administrables que tu equipo puede actualizar sin depender siempre de un técnico, con una base sólida para crecer.',
+    title: 'WordPress y e-commerce',
+    text: 'Tiendas y sitios administrables, listos para crecer.',
   },
   {
-    title: 'Aplicaciones web modernas',
-    text: 'Interfaces dinámicas y experiencias digitales construidas con React y Next.js, pensadas para usuarios exigentes y procesos que evolucionan con tu negocio.',
+    title: 'Apps web modernas',
+    text: 'Experiencias dinámicas con React y Next.js.',
   },
   {
-    title: 'Infraestructura, hosting y servidores',
-    text: 'Configuración, migración y administración de servidores VPS Linux para que tu plataforma esté disponible, segura y preparada para el crecimiento.',
+    title: 'Infraestructura y hosting',
+    text: 'Servidores VPS Linux configurados, seguros y bajo control.',
   },
 ];
 
 const industries = [
-  {
-    title: 'Clínicas y centros médicos',
-    text: 'Sitios informativos, gestión de citas, portales para pacientes y herramientas que mejoran la comunicación entre el centro y quienes confían en su atención.',
-  },
-  {
-    title: 'Laboratorios',
-    text: 'Plataformas que organizan información, facilitan consultas y fortalecen la imagen profesional de laboratorios que necesitan presencia digital confiable.',
-  },
-  {
-    title: 'Instituciones educativas',
-    text: 'Portales institucionales, aulas virtuales y sistemas que conectan administración, docentes y estudiantes en un entorno digital ordenado.',
-  },
-  {
-    title: 'Firmas de abogados',
-    text: 'Sitios corporativos y herramientas internas que proyectan seriedad, organizan información sensible y apoyan la operación diaria del despacho.',
-  },
-  {
-    title: 'Empresas de servicios',
-    text: 'Presencia digital, sistemas de gestión y automatización de procesos para empresas que quieren operar con mayor eficiencia y mejor servicio al cliente.',
-  },
-  {
-    title: 'Comercio electrónico',
-    text: 'Tiendas online y plataformas de venta diseñadas para presentar productos con claridad, facilitar la compra y sostener el crecimiento del negocio.',
-  },
+  { title: 'Clínicas y centros médicos', image: '/images/industries/clinicas.svg' },
+  { title: 'Laboratorios', image: '/images/industries/laboratorios.svg' },
+  { title: 'Instituciones educativas', image: '/images/industries/educacion.svg' },
+  { title: 'Firmas de abogados', image: '/images/industries/abogados.svg' },
+  { title: 'Empresas de servicios', image: '/images/industries/servicios.svg' },
+  { title: 'Comercio electrónico', image: '/images/industries/ecommerce.svg' },
 ];
 
 const projects = [
   {
     category: 'Salud',
     title: 'Portal web para centro médico',
-    description:
-      'Sitio corporativo con información de servicios, canales de contacto y estructura pensada para que pacientes encuentren lo que necesitan con rapidez.',
+    description: 'Sitio corporativo orientado a pacientes y servicios.',
     result: 'Mayor visibilidad y confianza digital',
+    image: '/images/portfolio/proyecto-salud.svg',
   },
   {
     category: 'Sistemas empresariales',
     title: 'Plataforma de gestión interna',
-    description:
-      'Sistema a medida con Laravel para centralizar operaciones, reducir tareas manuales y dar al equipo una herramienta alineada con sus procesos reales.',
-    result: 'Operaciones más ordenadas y controladas',
-  },
-  {
-    category: 'Educación',
-    title: 'Plataforma digital para institución educativa',
-    description:
-      'Entorno web para comunicación institucional, gestión de contenidos y apoyo a la formación, con una base técnica estable y fácil de administrar.',
-    result: 'Comunicación y gestión en un solo lugar',
+    description: 'Sistema a medida para centralizar operaciones con Laravel.',
+    result: 'Operaciones más ordenadas',
+    image: '/images/portfolio/proyecto-sistema.svg',
   },
   {
     category: 'Comercio electrónico',
-    title: 'Tienda online sobre WordPress',
-    description:
-      'E-commerce con catálogo de productos, proceso de compra claro y panel de administración para que el negocio gestione su operación digital con autonomía.',
-    result: 'Canal de ventas digital operativo',
-  },
-  {
-    category: 'Servicios profesionales',
-    title: 'Sitio corporativo para firma de abogados',
-    description:
-      'Presencia web que transmite profesionalismo, presenta áreas de práctica y facilita el contacto con clientes potenciales.',
-    result: 'Imagen sólida y presencia profesional',
-  },
-  {
-    category: 'Infraestructura',
-    title: 'Migración y administración de servidores',
-    description:
-      'Traslado de plataformas a entorno VPS Linux, configuración de hosting, respaldos y monitoreo para garantizar estabilidad y continuidad operativa.',
-    result: 'Infraestructura confiable y bajo control',
+    title: 'Tienda online',
+    description: 'E-commerce con catálogo, compra clara y panel de administración.',
+    result: 'Canal de ventas operativo',
+    image: '/images/portfolio/proyecto-ecommerce.svg',
   },
 ];
 
@@ -112,9 +74,18 @@ const technologies = [
 ];
 
 const posts = [
-  'Señales de que tu empresa necesita digitalizar procesos antes de que el caos operativo crezca',
-  'Qué debe tener un sitio web corporativo para generar confianza en sectores regulados',
-  'Cuándo conviene un sistema a medida y cuándo una plataforma como WordPress',
+  {
+    title: 'Señales de que tu empresa necesita digitalizar procesos',
+    image: '/images/blog/post-1.svg',
+  },
+  {
+    title: 'Qué debe tener un sitio web corporativo en sectores regulados',
+    image: '/images/blog/post-2.svg',
+  },
+  {
+    title: 'Sistema a medida vs. WordPress: cuándo conviene cada uno',
+    image: '/images/blog/post-3.svg',
+  },
 ];
 ---
 
@@ -162,12 +133,11 @@ const posts = [
     <main id="inicio">
       <section class="hero section">
         <div class="hero-content">
-          <p class="eyebrow">Consultoría tecnológica · Digitalización · Full Stack</p>
+          <p class="eyebrow">Consultoría tecnológica · Full Stack</p>
           <h1>Tu aliado tecnológico para digitalizar procesos y hacer crecer tu empresa.</h1>
           <p class="hero-copy">
-            Soy Jorge Veliz, desarrollador Full Stack y consultor tecnológico. Ayudo a empresas a
-            transformar operaciones manuales en sistemas digitales, fortalecer su presencia en línea y
-            contar con una infraestructura confiable que respalde su crecimiento.
+            Ayudo a empresas a ordenar operaciones, fortalecer su presencia digital y contar con
+            infraestructura confiable.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contacto">Conversar sobre tu proyecto</a>
@@ -181,68 +151,58 @@ const posts = [
             <span>VPS Linux</span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Propuesta de valor">
-          <div class="status-pill">Disponible para nuevos proyectos</div>
-          <h2>Tecnología al servicio de tu operación, no al revés.</h2>
-          <p>
-            Trabajo con empresas que necesitan más que un sitio web: necesitan orden, eficiencia y un
-            socio que entienda tanto el negocio como la parte técnica.
-          </p>
-          <div class="metric-grid">
-            <div>
-              <strong>Procesos</strong>
-              <span>digitalización con sentido</span>
-            </div>
-            <div>
-              <strong>Presencia</strong>
-              <span>digital que genera confianza</span>
-            </div>
-            <div>
-              <strong>Operación</strong>
-              <span>estable y bajo control</span>
-            </div>
-          </div>
-        </aside>
+        <figure class="hero-media">
+          <!-- Reemplazar src por /images/hero.jpg -->
+          <img
+            class="media-img media-img--hero"
+            src="/images/hero.svg"
+            alt="Jorge Veliz — consultor tecnológico"
+            width="1200"
+            height="900"
+            loading="eager"
+          />
+        </figure>
       </section>
 
       <section class="section logos" aria-label="Propuesta de valor">
-        <span>Digitalización de procesos</span>
-        <span>Presencia digital sólida</span>
-        <span>Operaciones optimizadas</span>
-        <span>Infraestructura confiable</span>
-        <span>Acompañamiento consultivo</span>
+        <span>Digitalización</span>
+        <span>Presencia digital</span>
+        <span>Operaciones</span>
+        <span>Infraestructura</span>
+        <span>Consultoría</span>
       </section>
 
-      <section id="sobre-mi" class="section split">
-        <div>
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Experiencia técnica con enfoque en lo que importa al negocio.</h2>
-        </div>
+      <section id="sobre-mi" class="section split split--center">
+        <figure class="about-media">
+          <!-- Reemplazar src por /images/about.jpg -->
+          <img
+            class="media-img media-img--portrait"
+            src="/images/about.svg"
+            alt="Jorge Veliz"
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+        </figure>
         <div class="rich-text">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Experiencia técnica con enfoque en negocio.</h2>
           <p>
-            Soy Jorge Veliz, desarrollador Full Stack y consultor tecnológico con experiencia en
+            Soy Jorge Veliz, desarrollador Full Stack y consultor tecnológico. He trabajado con
             clínicas, laboratorios, instituciones educativas, firmas de abogados, empresas de
             servicios y comercio electrónico.
           </p>
           <p>
-            Mi trabajo no se limita a escribir código. Primero entiendo cómo opera tu empresa, qué
-            procesos pueden mejorarse y qué solución digital tiene sentido para tu contexto. Luego
-            construyo sistemas, sitios web e infraestructura con PHP, Laravel, WordPress, JavaScript,
-            React, Next.js y servidores VPS Linux — siempre con una mirada práctica orientada a
-            resultados.
+            Primero entiendo tu operación; después propongo y construyo la solución que tenga sentido
+            para tu contexto.
           </p>
         </div>
       </section>
 
       <section id="servicios" class="section">
-        <div class="section-heading">
+        <div class="section-heading section-heading--compact">
           <p class="eyebrow">Servicios</p>
-          <h2>Servicios pensados para resolver problemas reales de operación y crecimiento.</h2>
-          <p>
-            Cada servicio parte de una necesidad concreta del negocio: menos trabajo manual, mejor
-            comunicación con clientes, más control sobre la operación o una base digital en la que
-            puedas confiar.
-          </p>
+          <h2>Soluciones para operar mejor y crecer con confianza.</h2>
         </div>
         <div class="card-grid">
           {services.map((service) => (
@@ -255,77 +215,84 @@ const posts = [
       </section>
 
       <section id="industrias" class="section">
-        <div class="section-heading">
+        <div class="section-heading section-heading--compact">
           <p class="eyebrow">Industrias</p>
-          <h2>Sectores donde he acompañado a empresas en su transformación digital.</h2>
-          <p>
-            Conozco las dinámicas, exigencias y oportunidades de distintos rubros. Eso me permite
-            proponer soluciones que encajan con la realidad de cada sector, no con plantillas genéricas.
-          </p>
+          <h2>Sectores donde he acompañado empresas.</h2>
         </div>
-        <div class="card-grid">
+        <div class="industry-grid">
           {industries.map((industry) => (
-            <article class="service-card">
+            <article class="industry-card">
+              <img
+                class="media-img media-img--thumb"
+                src={industry.image}
+                alt={industry.title}
+                width="400"
+                height="280"
+                loading="lazy"
+              />
               <h3>{industry.title}</h3>
-              <p>{industry.text}</p>
             </article>
           ))}
         </div>
       </section>
 
       <section id="portafolio" class="section dark-section">
-        <div class="section-heading">
+        <div class="section-heading section-heading--compact">
           <p class="eyebrow">Portafolio</p>
-          <h2>Tipos de proyectos en los que he participado.</h2>
-          <p>
-            Estos son ejemplos representativos del tipo de trabajo que realizo. Cada proyecto parte
-            de un problema concreto del negocio y busca un resultado claro para quien lo contrata.
-          </p>
+          <h2>Proyectos representativos.</h2>
         </div>
         <div class="project-grid">
           {projects.map((project) => (
             <article class="project-card">
-              <span>{project.category}</span>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <strong>{project.result}</strong>
+              <img
+                class="media-img media-img--project"
+                src={project.image}
+                alt={project.title}
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+              <div class="project-body">
+                <span>{project.category}</span>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <strong>{project.result}</strong>
+              </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="tecnologias" class="section split">
+      <section id="tecnologias" class="section split split--center">
         <div>
           <p class="eyebrow">Tecnologías</p>
-          <h2>Herramientas que uso para construir soluciones sólidas y sostenibles.</h2>
+          <h2>Herramientas según lo que tu proyecto necesita.</h2>
         </div>
-        <div>
-          <p class="section-copy">
-            Elijo la tecnología según lo que tu proyecto necesita, no al revés. La prioridad siempre
-            es que la solución funcione bien hoy y pueda mantenerse y crecer mañana sin complicaciones
-            innecesarias.
-          </p>
-          <div class="tech-list">
-            {technologies.map((tech) => <span>{tech}</span>)}
-          </div>
+        <div class="tech-list">
+          {technologies.map((tech) => <span>{tech}</span>)}
         </div>
       </section>
 
       <section id="blog" class="section">
-        <div class="section-heading">
+        <div class="section-heading section-heading--compact">
           <p class="eyebrow">Blog</p>
-          <h2>Ideas y reflexiones sobre tecnología aplicada al negocio.</h2>
-          <p>
-            Contenido orientado a dueños y responsables de operaciones que quieren entender cuándo y
-            cómo invertir en digitalización con criterio.
-          </p>
+          <h2>Tecnología aplicada al negocio.</h2>
         </div>
         <div class="blog-grid">
           {posts.map((post) => (
             <article class="blog-card">
-              <p>Tema de interés</p>
-              <h3>{post}</h3>
-              <a href="#contacto">Hablemos de esto</a>
+              <img
+                class="media-img media-img--blog"
+                src={post.image}
+                alt=""
+                width="600"
+                height="340"
+                loading="lazy"
+              />
+              <div class="blog-body">
+                <h3>{post.title}</h3>
+                <a href="#contacto">Hablemos de esto</a>
+              </div>
             </article>
           ))}
         </div>
@@ -334,7 +301,7 @@ const posts = [
       <section class="section cta-panel">
         <div>
           <p class="eyebrow">Próximo paso</p>
-          <h2>¿Tu empresa necesita ordenar procesos, mejorar su presencia digital o contar con una infraestructura confiable?</h2>
+          <h2>¿Listo para ordenar procesos o mejorar tu presencia digital?</h2>
         </div>
         <a class="button primary" href="#contacto">Agendar una conversación</a>
       </section>
@@ -342,16 +309,8 @@ const posts = [
       <section id="contacto" class="section contact">
         <div>
           <p class="eyebrow">Contacto</p>
-          <h2>Cuéntame qué necesita tu empresa y veamos cómo puedo ayudarte.</h2>
-          <p>
-            Escríbeme con una descripción breve de tu situación o proyecto. Te responderé con
-            claridad sobre alcance, enfoque recomendado y los siguientes pasos a seguir.
-          </p>
-          <ul class="contact-points">
-            <li>Entendimiento inicial de tu necesidad y contexto operativo.</li>
-            <li>Propuesta de solución alineada con tus prioridades de negocio.</li>
-            <li>Estimación transparente según alcance, plazos y complejidad.</li>
-          </ul>
+          <h2>Cuéntame qué necesita tu empresa.</h2>
+          <p>Te responderé con alcance, enfoque recomendado y próximos pasos.</p>
         </div>
         <form class="contact-form" name="contacto" method="post">
           <label>
@@ -504,10 +463,55 @@ const posts = [
 
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
     gap: 2rem;
     align-items: center;
-    min-height: 760px;
+    min-height: auto;
+    padding-top: 48px;
+  }
+
+  .media-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background: var(--line);
+  }
+
+  .media-img--hero {
+    aspect-ratio: 4 / 3;
+    box-shadow: var(--shadow);
+  }
+
+  .media-img--portrait {
+    aspect-ratio: 4 / 5;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
+  }
+
+  .media-img--thumb {
+    aspect-ratio: 10 / 7;
+    border-radius: 18px;
+    margin-bottom: 0.85rem;
+  }
+
+  .media-img--project {
+    aspect-ratio: 16 / 10;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .media-img--blog {
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .hero-media,
+  .about-media {
+    margin: 0;
+  }
+
+  .split--center {
+    align-items: center;
   }
 
   .eyebrow {
@@ -621,80 +625,6 @@ const posts = [
     padding: 0.52rem 0.85rem;
   }
 
-  .hero-card {
-    position: relative;
-    overflow: hidden;
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(145deg, rgba(20, 184, 166, 0.2), transparent 36%),
-      linear-gradient(160deg, var(--dark), var(--dark-soft));
-    color: #ffffff;
-    box-shadow: var(--shadow);
-  }
-
-  .hero-card::after {
-    position: absolute;
-    right: -90px;
-    bottom: -120px;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    background: rgba(37, 99, 235, 0.42);
-    content: '';
-    filter: blur(8px);
-  }
-
-  .hero-card h2 {
-    position: relative;
-    z-index: 1;
-    font-size: clamp(1.7rem, 3vw, 2.55rem);
-  }
-
-  .hero-card p,
-  .metric-grid span {
-    position: relative;
-    z-index: 1;
-    color: #b9c3d6;
-  }
-
-  .status-pill {
-    position: relative;
-    z-index: 1;
-    display: inline-flex;
-    margin-bottom: 4rem;
-    padding: 0.55rem 0.85rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    color: #dbeafe;
-    font-size: 0.82rem;
-    font-weight: 800;
-  }
-
-  .metric-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
-    margin-top: 2rem;
-  }
-
-  .metric-grid div {
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.06);
-  }
-
-  .metric-grid strong {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: 1.45rem;
-  }
-
   .logos {
     justify-content: space-between;
     gap: 0.8rem;
@@ -725,6 +655,33 @@ const posts = [
     margin-bottom: 2rem;
   }
 
+  .section-heading--compact {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading--compact h2 {
+    margin-bottom: 0;
+  }
+
+  .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .industry-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.82);
+    padding: 0.85rem 0.85rem 1.1rem;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
+  }
+
+  .industry-card h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
   .card-grid,
   .project-grid,
   .blog-grid {
@@ -747,14 +704,30 @@ const posts = [
 
   .service-card,
   .blog-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .blog-card {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .blog-body {
+    padding: 1.25rem;
+  }
+
+  .blog-body h3 {
+    margin-bottom: 0.75rem;
   }
 
   .service-card p,
   .blog-card p,
-  .project-card p,
-  .contact-points {
+  .project-card p {
     color: var(--muted);
+  }
+
+  .blog-card > p {
+    display: none;
   }
 
   .dark-section {
@@ -777,15 +750,20 @@ const posts = [
   }
 
   .project-card {
-    padding: 1.5rem;
+    overflow: hidden;
+    padding: 0;
     border: 1px solid rgba(255, 255, 255, 0.13);
     border-radius: var(--radius);
     background: rgba(255, 255, 255, 0.06);
   }
 
+  .project-body {
+    padding: 1.25rem;
+  }
+
   .project-card span {
     display: inline-flex;
-    margin-bottom: 1.8rem;
+    margin-bottom: 0.65rem;
     color: var(--accent);
     font-size: 0.82rem;
     font-weight: 850;
@@ -800,7 +778,7 @@ const posts = [
     display: flex;
     flex-wrap: wrap;
     gap: 0.65rem;
-    margin-top: 1.5rem;
+    align-content: start;
   }
 
   .tech-list span {
@@ -811,16 +789,10 @@ const posts = [
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .blog-card p {
-    margin-bottom: 1.4rem;
-    font-size: 0.83rem;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-
   .blog-card a {
     color: var(--primary);
     font-weight: 800;
+    font-size: 0.94rem;
   }
 
   .cta-panel {
@@ -842,10 +814,6 @@ const posts = [
     grid-template-columns: 0.9fr 1.1fr;
     gap: 2rem;
     align-items: start;
-  }
-
-  .contact-points {
-    padding-left: 1.2rem;
   }
 
   .contact-form {
@@ -934,7 +902,8 @@ const posts = [
 
     .card-grid,
     .project-grid,
-    .blog-grid {
+    .blog-grid,
+    .industry-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -971,7 +940,6 @@ const posts = [
       font-size: clamp(2.55rem, 16vw, 4rem);
     }
 
-    .hero-card,
     .cta-panel,
     .dark-section {
       border-radius: 26px;
@@ -980,7 +948,7 @@ const posts = [
     .card-grid,
     .project-grid,
     .blog-grid,
-    .metric-grid {
+    .industry-grid {
       grid-template-columns: 1fr;
     }
 

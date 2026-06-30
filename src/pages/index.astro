@@ -1,74 +1,120 @@
 ---
 const services = [
   {
-    title: 'Desarrollo web empresarial',
-    text: 'Aplicaciones, portales y plataformas a medida con arquitectura escalable, mantenimiento claro y foco en resultados de negocio.',
+    title: 'Digitalización de procesos',
+    text: 'Identifico tareas repetitivas, cuellos de botella y flujos manuales para convertirlos en sistemas que ahorran tiempo y reducen errores en el día a día de tu empresa.',
   },
   {
-    title: 'Laravel, PHP y JavaScript',
-    text: 'Construcción y optimización de sistemas backend, integraciones, paneles administrativos, APIs y experiencias frontend modernas.',
+    title: 'Sistemas empresariales a medida',
+    text: 'Desarrollo plataformas internas, paneles de gestión y herramientas adaptadas a cómo opera tu negocio, con información centralizada y accesible para tu equipo.',
   },
   {
-    title: 'WordPress, WooCommerce y Moodle',
-    text: 'Sitios corporativos, tiendas online, intranets educativas y soluciones personalizadas sobre plataformas consolidadas.',
+    title: 'Presencia digital y sitios web',
+    text: 'Sitios corporativos, portales informativos y plataformas que comunican con claridad lo que hace tu empresa y facilitan que clientes y prospectos den el siguiente paso.',
   },
   {
-    title: 'SEO técnico y rendimiento',
-    text: 'Auditorías, optimización Core Web Vitals, indexabilidad, estructura semántica, velocidad de carga y mejoras de conversión.',
+    title: 'WordPress y comercio electrónico',
+    text: 'Tiendas online y sitios administrables que tu equipo puede actualizar sin depender siempre de un técnico, con una base sólida para crecer.',
   },
   {
-    title: 'Administración VPS',
-    text: 'Configuración, hardening, migraciones, monitoreo, backups y despliegues para proyectos que necesitan estabilidad real.',
+    title: 'Aplicaciones web modernas',
+    text: 'Interfaces dinámicas y experiencias digitales construidas con React y Next.js, pensadas para usuarios exigentes y procesos que evolucionan con tu negocio.',
   },
   {
-    title: 'Consultoría tecnológica',
-    text: 'Diagnóstico, planificación y acompañamiento para transformar requerimientos complejos en soluciones web sostenibles.',
+    title: 'Infraestructura, hosting y servidores',
+    text: 'Configuración, migración y administración de servidores VPS Linux para que tu plataforma esté disponible, segura y preparada para el crecimiento.',
+  },
+];
+
+const industries = [
+  {
+    title: 'Clínicas y centros médicos',
+    text: 'Sitios informativos, gestión de citas, portales para pacientes y herramientas que mejoran la comunicación entre el centro y quienes confían en su atención.',
+  },
+  {
+    title: 'Laboratorios',
+    text: 'Plataformas que organizan información, facilitan consultas y fortalecen la imagen profesional de laboratorios que necesitan presencia digital confiable.',
+  },
+  {
+    title: 'Instituciones educativas',
+    text: 'Portales institucionales, aulas virtuales y sistemas que conectan administración, docentes y estudiantes en un entorno digital ordenado.',
+  },
+  {
+    title: 'Firmas de abogados',
+    text: 'Sitios corporativos y herramientas internas que proyectan seriedad, organizan información sensible y apoyan la operación diaria del despacho.',
+  },
+  {
+    title: 'Empresas de servicios',
+    text: 'Presencia digital, sistemas de gestión y automatización de procesos para empresas que quieren operar con mayor eficiencia y mejor servicio al cliente.',
+  },
+  {
+    title: 'Comercio electrónico',
+    text: 'Tiendas online y plataformas de venta diseñadas para presentar productos con claridad, facilitar la compra y sostener el crecimiento del negocio.',
   },
 ];
 
 const projects = [
   {
-    category: 'E-commerce',
-    title: 'Optimización WooCommerce para crecimiento',
+    category: 'Salud',
+    title: 'Portal web para centro médico',
     description:
-      'Rediseño de experiencia de compra, mejoras de rendimiento y automatización de procesos para aumentar conversiones.',
-    result: '+38% mejora estimada en velocidad',
+      'Sitio corporativo con información de servicios, canales de contacto y estructura pensada para que pacientes encuentren lo que necesitan con rapidez.',
+    result: 'Mayor visibilidad y confianza digital',
   },
   {
-    category: 'SaaS / Laravel',
-    title: 'Sistema web administrativo a medida',
+    category: 'Sistemas empresariales',
+    title: 'Plataforma de gestión interna',
     description:
-      'Desarrollo de módulos de gestión, autenticación, reportes y flujos operativos para reducir trabajo manual.',
-    result: 'Procesos más rápidos y medibles',
+      'Sistema a medida con Laravel para centralizar operaciones, reducir tareas manuales y dar al equipo una herramienta alineada con sus procesos reales.',
+    result: 'Operaciones más ordenadas y controladas',
   },
   {
-    category: 'Educación digital',
-    title: 'Plataforma Moodle corporativa',
+    category: 'Educación',
+    title: 'Plataforma digital para institución educativa',
     description:
-      'Implementación de aula virtual con roles, reportes, estructura de cursos y configuración segura para equipos internos.',
-    result: 'Gestión centralizada de capacitación',
+      'Entorno web para comunicación institucional, gestión de contenidos y apoyo a la formación, con una base técnica estable y fácil de administrar.',
+    result: 'Comunicación y gestión en un solo lugar',
+  },
+  {
+    category: 'Comercio electrónico',
+    title: 'Tienda online sobre WordPress',
+    description:
+      'E-commerce con catálogo de productos, proceso de compra claro y panel de administración para que el negocio gestione su operación digital con autonomía.',
+    result: 'Canal de ventas digital operativo',
+  },
+  {
+    category: 'Servicios profesionales',
+    title: 'Sitio corporativo para firma de abogados',
+    description:
+      'Presencia web que transmite profesionalismo, presenta áreas de práctica y facilita el contacto con clientes potenciales.',
+    result: 'Imagen sólida y presencia profesional',
+  },
+  {
+    category: 'Infraestructura',
+    title: 'Migración y administración de servidores',
+    description:
+      'Traslado de plataformas a entorno VPS Linux, configuración de hosting, respaldos y monitoreo para garantizar estabilidad y continuidad operativa.',
+    result: 'Infraestructura confiable y bajo control',
   },
 ];
 
 const technologies = [
-  'Laravel',
   'PHP',
-  'JavaScript',
+  'Laravel',
   'WordPress',
-  'WooCommerce',
-  'Moodle',
+  'JavaScript',
+  'React',
+  'Next.js',
   'MySQL',
-  'SEO técnico',
   'VPS Linux',
-  'APIs REST',
-  'Astro',
-  'Performance web',
+  'Hosting',
+  'APIs',
 ];
 
 const posts = [
-  'Cómo saber si tu sitio web está perdiendo clientes por problemas técnicos',
-  'Laravel vs WordPress: cuándo conviene cada solución para tu negocio',
-  'Checklist SEO técnico antes de lanzar una web corporativa',
+  'Señales de que tu empresa necesita digitalizar procesos antes de que el caos operativo crezca',
+  'Qué debe tener un sitio web corporativo para generar confianza en sectores regulados',
+  'Cuándo conviene un sistema a medida y cuándo una plataforma como WordPress',
 ];
 ---
 
@@ -79,107 +125,111 @@ const posts = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Desarrollador Full Stack y Consultor Tecnológico especializado en Laravel, PHP, JavaScript, WordPress, WooCommerce, Moodle, SEO técnico y servidores VPS."
+      content="Jorge Veliz — Desarrollador Full Stack y consultor tecnológico. Aliado digital para empresas que buscan digitalizar procesos, mejorar su presencia web y optimizar operaciones."
     />
     <meta
       name="keywords"
-      content="desarrollador full stack, consultor tecnológico, Laravel, PHP, JavaScript, WordPress, WooCommerce, Moodle, SEO técnico, VPS"
+      content="Jorge Veliz, consultor tecnológico, desarrollador full stack, digitalización empresarial, Laravel, WordPress, React, Next.js, VPS Linux"
     />
-    <meta name="author" content="Desarrollador Full Stack y Consultor Tecnológico" />
-    <meta property="og:title" content="Desarrollador Full Stack y Consultor Tecnológico" />
+    <meta name="author" content="Jorge Veliz" />
+    <meta property="og:title" content="Jorge Veliz | Consultor Tecnológico y Desarrollador Full Stack" />
     <meta
       property="og:description"
-      content="Soluciones web empresariales, consultoría tecnológica y optimización digital enfocada en resultados."
+      content="Aliado tecnológico para empresas que quieren digitalizar procesos, fortalecer su presencia digital y operar con mayor eficiencia."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tudominio.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <title>Desarrollador Full Stack y Consultor Tecnológico</title>
+    <title>Jorge Veliz | Consultor Tecnológico y Desarrollador Full Stack</title>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark">FS</span>
-        <span>Full Stack Consultant</span>
+        <span class="brand-mark">JV</span>
+        <span>Jorge Veliz</span>
       </a>
       <nav class="nav" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#servicios">Servicios</a>
+        <a href="#industrias">Industrias</a>
         <a href="#portafolio">Portafolio</a>
         <a href="#blog">Blog</a>
-        <a class="nav-cta" href="#contacto">Cotizar proyecto</a>
+        <a class="nav-cta" href="#contacto">Conversar</a>
       </nav>
     </header>
 
     <main id="inicio">
       <section class="hero section">
         <div class="hero-content">
-          <p class="eyebrow">Desarrollo Full Stack | Consultoría Tecnológica | SEO Técnico</p>
-          <h1>Soluciones web empresariales que convierten objetivos en resultados medibles.</h1>
+          <p class="eyebrow">Consultoría tecnológica · Digitalización · Full Stack</p>
+          <h1>Tu aliado tecnológico para digitalizar procesos y hacer crecer tu empresa.</h1>
           <p class="hero-copy">
-            Desarrollo plataformas, sitios corporativos, tiendas online y sistemas a medida con una visión integral:
-            tecnología sólida, rendimiento, escalabilidad y estrategia digital.
+            Soy Jorge Veliz, desarrollador Full Stack y consultor tecnológico. Ayudo a empresas a
+            transformar operaciones manuales en sistemas digitales, fortalecer su presencia en línea y
+            contar con una infraestructura confiable que respalde su crecimiento.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contacto">Solicitar cotización</a>
-            <a class="button secondary" href="#portafolio">Ver proyectos</a>
+            <a class="button primary" href="#contacto">Conversar sobre tu proyecto</a>
+            <a class="button secondary" href="#portafolio">Ver experiencia</a>
           </div>
-          <div class="trust-bar" aria-label="Áreas de especialidad">
+          <div class="trust-bar" aria-label="Especialidades principales">
             <span>Laravel</span>
             <span>WordPress</span>
-            <span>WooCommerce</span>
-            <span>Moodle</span>
-            <span>VPS</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>VPS Linux</span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Resumen profesional">
+        <aside class="hero-card" aria-label="Propuesta de valor">
           <div class="status-pill">Disponible para nuevos proyectos</div>
-          <h2>Consultoría y desarrollo con enfoque ejecutivo.</h2>
+          <h2>Tecnología al servicio de tu operación, no al revés.</h2>
           <p>
-            Ideal para empresas que necesitan mejorar su presencia digital, automatizar procesos o estabilizar
-            infraestructura web crítica.
+            Trabajo con empresas que necesitan más que un sitio web: necesitan orden, eficiencia y un
+            socio que entienda tanto el negocio como la parte técnica.
           </p>
           <div class="metric-grid">
             <div>
-              <strong>360°</strong>
-              <span>visión técnica y negocio</span>
+              <strong>Procesos</strong>
+              <span>digitalización con sentido</span>
             </div>
             <div>
-              <strong>SEO</strong>
-              <span>base técnica optimizada</span>
+              <strong>Presencia</strong>
+              <span>digital que genera confianza</span>
             </div>
             <div>
-              <strong>VPS</strong>
-              <span>control de infraestructura</span>
+              <strong>Operación</strong>
+              <span>estable y bajo control</span>
             </div>
           </div>
         </aside>
       </section>
 
       <section class="section logos" aria-label="Propuesta de valor">
-        <span>Arquitectura limpia</span>
-        <span>Performance</span>
-        <span>Seguridad</span>
-        <span>Automatización</span>
-        <span>Conversión</span>
+        <span>Digitalización de procesos</span>
+        <span>Presencia digital sólida</span>
+        <span>Operaciones optimizadas</span>
+        <span>Infraestructura confiable</span>
+        <span>Acompañamiento consultivo</span>
       </section>
 
       <section id="sobre-mi" class="section split">
         <div>
           <p class="eyebrow">Sobre mí</p>
-          <h2>Un perfil técnico con mentalidad consultiva.</h2>
+          <h2>Experiencia técnica con enfoque en lo que importa al negocio.</h2>
         </div>
         <div class="rich-text">
           <p>
-            Soy Desarrollador Full Stack y Consultor Tecnológico especializado en crear soluciones web para empresas
-            que necesitan algo más que una página bonita: necesitan estabilidad, velocidad, posicionamiento y un
-            sistema que acompañe sus objetivos comerciales.
+            Soy Jorge Veliz, desarrollador Full Stack y consultor tecnológico con experiencia en
+            clínicas, laboratorios, instituciones educativas, firmas de abogados, empresas de
+            servicios y comercio electrónico.
           </p>
           <p>
-            Trabajo con tecnologías como Laravel, PHP, JavaScript, WordPress, WooCommerce y Moodle, integrando
-            desarrollo, SEO técnico y administración de servidores VPS para entregar proyectos sólidos de extremo a
-            extremo.
+            Mi trabajo no se limita a escribir código. Primero entiendo cómo opera tu empresa, qué
+            procesos pueden mejorarse y qué solución digital tiene sentido para tu contexto. Luego
+            construyo sistemas, sitios web e infraestructura con PHP, Laravel, WordPress, JavaScript,
+            React, Next.js y servidores VPS Linux — siempre con una mirada práctica orientada a
+            resultados.
           </p>
         </div>
       </section>
@@ -187,10 +237,11 @@ const posts = [
       <section id="servicios" class="section">
         <div class="section-heading">
           <p class="eyebrow">Servicios</p>
-          <h2>Soluciones diseñadas para empresas que quieren crecer con tecnología confiable.</h2>
+          <h2>Servicios pensados para resolver problemas reales de operación y crecimiento.</h2>
           <p>
-            Desde la estrategia inicial hasta el despliegue, cada servicio está pensado para reducir fricción,
-            mejorar resultados y facilitar la toma de decisiones.
+            Cada servicio parte de una necesidad concreta del negocio: menos trabajo manual, mejor
+            comunicación con clientes, más control sobre la operación o una base digital en la que
+            puedas confiar.
           </p>
         </div>
         <div class="card-grid">
@@ -203,13 +254,32 @@ const posts = [
         </div>
       </section>
 
+      <section id="industrias" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Industrias</p>
+          <h2>Sectores donde he acompañado a empresas en su transformación digital.</h2>
+          <p>
+            Conozco las dinámicas, exigencias y oportunidades de distintos rubros. Eso me permite
+            proponer soluciones que encajan con la realidad de cada sector, no con plantillas genéricas.
+          </p>
+        </div>
+        <div class="card-grid">
+          {industries.map((industry) => (
+            <article class="service-card">
+              <h3>{industry.title}</h3>
+              <p>{industry.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="portafolio" class="section dark-section">
         <div class="section-heading">
           <p class="eyebrow">Portafolio</p>
-          <h2>Proyectos y casos de éxito orientados a impacto.</h2>
+          <h2>Tipos de proyectos en los que he participado.</h2>
           <p>
-            Presenta aquí tus mejores trabajos con métricas, contexto del problema y resultados obtenidos para generar
-            confianza inmediata.
+            Estos son ejemplos representativos del tipo de trabajo que realizo. Cada proyecto parte
+            de un problema concreto del negocio y busca un resultado claro para quien lo contrata.
           </p>
         </div>
         <div class="project-grid">
@@ -227,12 +297,13 @@ const posts = [
       <section id="tecnologias" class="section split">
         <div>
           <p class="eyebrow">Tecnologías</p>
-          <h2>Stack técnico preparado para proyectos web reales.</h2>
+          <h2>Herramientas que uso para construir soluciones sólidas y sostenibles.</h2>
         </div>
         <div>
           <p class="section-copy">
-            Combino herramientas consolidadas con buenas prácticas de rendimiento, seguridad y mantenimiento para que
-            cada proyecto sea fácil de escalar y administrar.
+            Elijo la tecnología según lo que tu proyecto necesita, no al revés. La prioridad siempre
+            es que la solución funcione bien hoy y pueda mantenerse y crecer mañana sin complicaciones
+            innecesarias.
           </p>
           <div class="tech-list">
             {technologies.map((tech) => <span>{tech}</span>)}
@@ -243,18 +314,18 @@ const posts = [
       <section id="blog" class="section">
         <div class="section-heading">
           <p class="eyebrow">Blog</p>
-          <h2>Contenido para atraer clientes desde búsquedas de alto valor.</h2>
+          <h2>Ideas y reflexiones sobre tecnología aplicada al negocio.</h2>
           <p>
-            Una estrategia editorial enfocada en problemas reales ayuda a demostrar experiencia, posicionar servicios y
-            generar oportunidades orgánicas.
+            Contenido orientado a dueños y responsables de operaciones que quieren entender cuándo y
+            cómo invertir en digitalización con criterio.
           </p>
         </div>
         <div class="blog-grid">
           {posts.map((post) => (
             <article class="blog-card">
-              <p>Artículo recomendado</p>
+              <p>Tema de interés</p>
               <h3>{post}</h3>
-              <a href="#contacto">Consultar sobre este tema</a>
+              <a href="#contacto">Hablemos de esto</a>
             </article>
           ))}
         </div>
@@ -262,24 +333,24 @@ const posts = [
 
       <section class="section cta-panel">
         <div>
-          <p class="eyebrow">Trabajemos juntos</p>
-          <h2>¿Tu empresa necesita una web más rápida, segura y preparada para vender?</h2>
+          <p class="eyebrow">Próximo paso</p>
+          <h2>¿Tu empresa necesita ordenar procesos, mejorar su presencia digital o contar con una infraestructura confiable?</h2>
         </div>
-        <a class="button primary" href="#contacto">Agendar diagnóstico</a>
+        <a class="button primary" href="#contacto">Agendar una conversación</a>
       </section>
 
       <section id="contacto" class="section contact">
         <div>
           <p class="eyebrow">Contacto</p>
-          <h2>Solicita una cotización clara para tu próximo proyecto.</h2>
+          <h2>Cuéntame qué necesita tu empresa y veamos cómo puedo ayudarte.</h2>
           <p>
-            Cuéntame qué necesitas construir, mejorar o resolver. Responderé con una propuesta orientada a alcance,
-            prioridades técnicas y próximos pasos.
+            Escríbeme con una descripción breve de tu situación o proyecto. Te responderé con
+            claridad sobre alcance, enfoque recomendado y los siguientes pasos a seguir.
           </p>
           <ul class="contact-points">
-            <li>Diagnóstico inicial del estado técnico del proyecto.</li>
-            <li>Recomendaciones de solución y fases de implementación.</li>
-            <li>Estimación alineada con objetivos, urgencia y presupuesto.</li>
+            <li>Entendimiento inicial de tu necesidad y contexto operativo.</li>
+            <li>Propuesta de solución alineada con tus prioridades de negocio.</li>
+            <li>Estimación transparente según alcance, plazos y complejidad.</li>
           </ul>
         </div>
         <form class="contact-form" name="contacto" method="post">
@@ -295,26 +366,27 @@ const posts = [
             Tipo de proyecto
             <select name="tipo" required>
               <option value="">Selecciona una opción</option>
-              <option>Sitio corporativo</option>
-              <option>Laravel / sistema a medida</option>
-              <option>WordPress / WooCommerce</option>
-              <option>Moodle</option>
-              <option>SEO técnico / rendimiento</option>
-              <option>Servidor VPS</option>
+              <option>Digitalización de procesos</option>
+              <option>Sistema empresarial a medida</option>
+              <option>Sitio web corporativo</option>
+              <option>WordPress / comercio electrónico</option>
+              <option>Aplicación web (React / Next.js)</option>
+              <option>Infraestructura / hosting / VPS</option>
+              <option>Consultoría tecnológica</option>
             </select>
           </label>
           <label>
             Mensaje
-            <textarea name="mensaje" rows="5" placeholder="Describe brevemente tu necesidad" required></textarea>
+            <textarea name="mensaje" rows="5" placeholder="Describe brevemente qué necesitas resolver o mejorar" required></textarea>
           </label>
-          <button class="button primary" type="submit">Enviar solicitud</button>
-          <p class="form-note">Conecta este formulario a tu CRM, email transaccional o endpoint preferido.</p>
+          <button class="button primary" type="submit">Enviar mensaje</button>
+          <p class="form-note">Responderé a tu solicitud en un plazo razonable.</p>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© 2026 Full Stack Consultant. Desarrollo web, consultoría tecnológica y SEO técnico.</p>
+      <p>© 2026 Jorge Veliz. Consultoría tecnológica, desarrollo Full Stack e infraestructura digital.</p>
       <a href="#inicio">Volver arriba</a>
     </footer>
   </body>

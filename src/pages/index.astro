@@ -3,62 +3,78 @@
 const services = [
   {
     title: 'Digitalización de procesos',
-    text: 'Menos tareas manuales, más control sobre la operación diaria.',
+    text: 'Menos tareas manuales y más control sobre la operación diaria.',
   },
   {
     title: 'Sistemas empresariales',
-    text: 'Plataformas internas adaptadas a cómo trabaja tu equipo.',
+    text: 'Plataformas internas a medida: RRHH, inventario, ventas y flujos de tu equipo.',
   },
   {
-    title: 'Presencia digital',
-    text: 'Sitios corporativos que comunican con claridad y generan confianza.',
+    title: 'Apps web y SaaS',
+    text: 'Productos web con Laravel, Spring Boot o React, pensados para crecer.',
   },
   {
-    title: 'WordPress y e-commerce',
-    text: 'Tiendas y sitios administrables, listos para crecer.',
+    title: 'Sitios corporativos',
+    text: 'Presencia digital clara y administrable, también con WordPress.',
   },
   {
-    title: 'Apps web modernas',
-    text: 'Experiencias dinámicas con React y Next.js.',
+    title: 'APIs e integraciones',
+    text: 'Conecta sistemas, bancos y servicios externos con seguridad.',
   },
   {
     title: 'Infraestructura y hosting',
-    text: 'Servidores VPS Linux configurados, seguros y bajo control.',
+    text: 'VPS Linux, Docker y despliegues estables bajo tu control.',
   },
 ];
 
 const industries = [
-  { title: 'Clínicas y centros médicos', image: '/images/industries/clinicas.svg' },
-  { title: 'Laboratorios', image: '/images/industries/laboratorios.svg' },
-  { title: 'Instituciones educativas', image: '/images/industries/educacion.svg' },
-  { title: 'Firmas de abogados', image: '/images/industries/abogados.svg' },
-  { title: 'Empresas de servicios', image: '/images/industries/servicios.svg' },
-  { title: 'Comercio electrónico', image: '/images/industries/ecommerce.svg' },
+  { title: 'Banca y FinTech', image: '/images/industries/servicios.svg' },
+  { title: 'Seguros', image: '/images/industries/laboratorios.svg' },
+  { title: 'Sector público', image: '/images/industries/educacion.svg' },
+  { title: 'Salud y clínicas', image: '/images/industries/clinicas.svg' },
+  { title: 'Notarías y legal', image: '/images/industries/abogados.svg' },
+  { title: 'Empresas de servicios', image: '/images/industries/ecommerce.svg' },
 ];
 
 const projects = [
   {
     filter: 'salud',
     category: 'Salud',
-    title: 'Portal web para centro médico',
-    description: 'Sitio corporativo orientado a pacientes y servicios.',
-    result: 'Mayor visibilidad y confianza digital',
+    title: 'DoctoPro',
+    description: 'Plataforma de citas médicas, pacientes y administración clínica con Laravel.',
+    result: 'Agenda y operación clínica centralizadas',
     image: '/images/portfolio/proyecto-salud.svg',
   },
   {
     filter: 'sistemas',
     category: 'Sistemas',
-    title: 'Plataforma de gestión interna',
-    description: 'Sistema a medida para centralizar operaciones con Laravel.',
-    result: 'Operaciones más ordenadas',
+    title: 'Sistemas internos — sector público',
+    description: 'Plataformas a medida para RRHH, nómina, inventario y portales institucionales.',
+    result: 'Procesos internos digitalizados',
     image: '/images/portfolio/proyecto-sistema.svg',
   },
   {
-    filter: 'ecommerce',
-    category: 'E-commerce',
-    title: 'Tienda online',
-    description: 'Catálogo, compra clara y panel de administración.',
-    result: 'Canal de ventas operativo',
+    filter: 'sistemas',
+    category: 'FinTech',
+    title: 'Portal de seguros bancarios',
+    description: 'Herramienta para asesores: cotización, información y onboarding de seguros.',
+    result: 'Entregado y en producción',
+    image: '/images/portfolio/proyecto-sistema.svg',
+  },
+  {
+    filter: 'web',
+    category: 'Web',
+    title: 'Notaría IV de Daule',
+    description: 'Sitio corporativo para servicios notariales y presencia digital profesional.',
+    result: 'Presencia web clara y confiable',
+    image: '/images/portfolio/proyecto-ecommerce.svg',
+  },
+  {
+    filter: 'web',
+    category: 'Web',
+    title: 'Nova Pet',
+    description: 'Web corporativa en WordPress con hosting administrado para marca de mascotas.',
+    result: 'Sitio administrable y en línea',
     image: '/images/portfolio/proyecto-ecommerce.svg',
   },
 ];
@@ -67,7 +83,7 @@ const filters = [
   { id: 'all', label: 'Todos' },
   { id: 'salud', label: 'Salud' },
   { id: 'sistemas', label: 'Sistemas' },
-  { id: 'ecommerce', label: 'E-commerce' },
+  { id: 'web', label: 'Web' },
 ];
 
 const technologies = [
@@ -174,8 +190,8 @@ const posts = [
               <span class="role">Full Stack &amp; consultor</span>
             </h1>
             <p class="lead">
-              Ayudo a empresas a digitalizar procesos, fortalecer su presencia digital y operar con
-              infraestructura confiable.
+              Más de 10 años creando sistemas a medida — banca, gobierno y salud — para digitalizar
+              tu operación con claridad, seguridad y resultados.
             </p>
             <div class="hero-cta">
               <a class="button primary" href="#contacto">Hablemos</a>
@@ -210,8 +226,9 @@ const posts = [
           <div class="about-copy">
             <h2>Sobre mí</h2>
             <p>
-              Soy desarrollador Full Stack y consultor tecnológico. He trabajado  sistemas empresariales y financieros, clínicas,
-              laboratorios, instituciones educativas, firmas de abogados, empresas de servicios y comercio electrónico.
+              Soy desarrollador Full Stack y consultor tecnológico con más de 10 años construyendo
+              plataformas empresariales: banca digital, sistemas de gobierno, seguros y SaaS en salud.
+              Ayudo a empresas a digitalizar procesos y lanzar sistemas a medida con claridad y seguridad.
             </p>
             <div class="tech-pills">
               {technologies.slice(0, 6).map((tech) => <span>{tech}</span>)}
@@ -324,13 +341,13 @@ const posts = [
             <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Contacto</p>
             <h2>¿Tienes un proyecto en mente?</h2>
             <p>
-              Cuéntame qué necesitas digitalizar, mejorar o estabilizar. Te respondo con alcance y
-              próximos pasos.
+              Cuéntame qué necesitas: un sistema a medida, digitalizar procesos o una presencia web
+              sólida. Te respondo con alcance claro y próximos pasos.
             </p>
             <ul class="contact-list">
-              <li><strong>Enfoque:</strong> Digitalización, sistemas y presencia digital</li>
-              <li><strong>Stack:</strong> Laravel, WordPress, React, Next.js, VPS</li>
-              <li><strong>Respuesta:</strong> En un plazo razonable</li>
+              <li><strong>Enfoque:</strong> Sistemas empresariales, SaaS y digitalización</li>
+              <li><strong>Experiencia:</strong> Banca, gobierno, salud y SaaS</li>
+              <li><strong>Respuesta:</strong> Con alcance y próximos pasos claros</li>
             </ul>
           </div>
           <form class="contact-form" name="contacto" method="post">

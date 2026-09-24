@@ -1,0 +1,69 @@
+---
+description: Perfil profesional de Jorge Veliz (CV ES/EN) para copy preciso de la web
+alwaysApply: true
+---
+
+# Perfil — Jorge Luis Veliz Berzosa
+
+Fuente de verdad para copy, bio, meta, portfolio y claims de experiencia. No inventar roles, clientes, stack ni resultados no respaldados aquí.
+
+## Identidad
+
+- Nombre público: **Jorge Veliz** (completo: Jorge Luis Veliz Berzosa)
+- Ubicación: Guayaquil, Ecuador
+- Rol: Senior Full Stack Developer / desarrollador fullstack y consultor tecnológico
+- Experiencia: **10+ años** en apps web empresariales, banca, SaaS y sistemas de gobierno
+- Idiomas: español nativo; inglés — professional working proficiency
+- Certificación: Scrum Developer Certified
+- Contacto público (si se usa): LinkedIn `linkedin.com/in/jlveliz/` — no inventar otros
+
+## Posicionamiento de copy (web)
+
+- Tono: claro, profesional, orientado a valor de negocio (no jerga vacía ni CV literal).
+- Enfocar en: digitalización, sistemas a medida, presencia web, banca/FinTech, gobierno, salud/SaaS.
+- Preferir claims verificables (“plataformas bancarias”, “portales internos”, “citas médicas”) sobre cifras inventadas.
+- Stack en marketing: priorizar lo que el visitante entiende (Laravel, Java/Spring Boot, React, WordPress, VPS) sin listar todo el CV.
+- No exagerar títulos (evitar “CTO”, “arquitecto principal”, etc. salvo que el usuario lo pida).
+
+## Experiencia laboral (orden reciente)
+
+1. **Technisys (Galileo Financial Technologies)** — Senior Full Stack — Ago 2025–Presente  
+   Banca digital; Java Spring Boot microservicios + React; módulos cuentas, transferencias, auth/seguridad; equipos Agile distribuidos.
+
+2. **Banco Internacional** (outsourcing) — Full Stack — Abr 2023–Jul 2025  
+   Banca corporativa; Spring Boot, Thymeleaf, Oracle, REST; JWT / RBAC; optimización backend y BD.
+
+3. **Nova / Willdom-Oncedev — portal seguros (Banco Pichincha)** — Full Stack — ~2021–2023  
+   Portal de venta/asesoría de seguros para asesores bancarios; React, TypeScript, Redux, Formik, MUI; backend Spring Boot / Laravel según etapa; entregado a producción.
+
+4. **Prefectura del Guayas** — Full Stack — 2015–Presente (también en CV ES como foco 2015–2021)  
+   Plataformas internas (RRHH, nómina, inventario, seguridad, obras); portales gubernamentales; Laravel, Java, Vue, React, AngularJS, Node, Oracle; rediseño/mantenimiento de sitios públicos (p. ej. guayas.gob.ec).
+
+5. **Loga Systems** — Full Stack — 2013–2015  
+   Módulos de comercio exterior/aduanas; tickets de soporte; PHP, Laravel, AngularJS, PostgreSQL, Bootstrap.
+
+## Freelance / productos propios (usar en portfolio)
+
+- **DoctoPro** — https://doctopro.com — citas médicas, pacientes, admin; Laravel, JS, Bootstrap, MySQL, cloud.
+- **Notaría IV de Daule** — https://notaria4daule.com/
+- **Rivernet** — https://rivernet.net.ec/
+- **Nova Pet** — https://nova-pet.com/ — WordPress / web corporativa + hosting.
+- Freelance general: Laravel, React, TypeScript, Tailwind, Redux, MUI, WordPress, Node.
+
+## Stack real (referencia técnica)
+
+- Backend: PHP/Laravel, Java/Spring Boot, Node (Express, NestJS), AdonisJS, REST, microservicios
+- Frontend: React, TypeScript, Vue, AngularJS, Redux, Tailwind, MUI, Bootstrap, Next.js (si el sitio ya lo menciona)
+- Datos: MySQL, PostgreSQL, SQL Server, Oracle, MongoDB
+- Ops: Docker, Git, AWS, Azure, CI/CD (conceptos), Linux/VPS
+- Ingeniería: Agile/Scrum, SOLID, clean architecture, TDD, integraciones
+
+## Educación
+
+Universidad de Guayaquil — Intermedia/multimedia (licenciatura), 2008–2012.
+
+## Al editar la web
+
+- Alinear hero, about, meta description y portfolio con hechos de esta rule.
+- Si un proyecto del CV no está en la web, se puede proponer; no afirmar métricas sin datos.
+- Mantener `lang` y copy principal en español salvo página EN explícita.

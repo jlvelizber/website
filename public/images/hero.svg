@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder hero">
-  <rect fill="#e8edf4" width="1200" height="900"/>
-  <rect x="60" y="60" width="1080" height="780" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="16 10" rx="24"/>
-  <text x="600" y="430" text-anchor="middle" fill="#5b6475" font-family="system-ui,sans-serif" font-size="28" font-weight="700">hero.jpg</text>
-  <text x="600" y="475" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="18">Foto profesional o imagen principal</text>
-  <text x="600" y="510" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="16">1200 × 900 px</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Placeholder hero">
+  <rect fill="#e8edf4" width="900" height="1100"/>
+  <rect x="48" y="48" width="804" height="1004" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="16 10" rx="28"/>
+  <circle cx="450" cy="420" r="220" fill="#f26b1d" opacity="0.25"/>
+  <text x="450" y="520" text-anchor="middle" fill="#5b6475" font-family="system-ui,sans-serif" font-size="28" font-weight="700">hero.jpg</text>
+  <text x="450" y="565" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="18">Foto profesional (retrato)</text>
+  <text x="450" y="600" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="16">900 x 1100 px</text>
 </svg>
